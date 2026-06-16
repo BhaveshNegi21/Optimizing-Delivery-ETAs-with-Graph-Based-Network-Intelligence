@@ -1,0 +1,32 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements.txt — Phase 2: Network Audit (Logistics ETA Estimation Pipeline)
+#
+# Install:  pip install -r requirements.txt
+# Python:   3.9 – 3.12 (tested on 3.10)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Data manipulation ─────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ── Graph analytics ───────────────────────────────────────────────────────────
+networkx>=3.1
+
+# ── Scientific / statistical ──────────────────────────────────────────────────
+scipy>=1.10.0
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Notebook environment ──────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipykernel>=6.21.0
+nbformat>=5.7.0
+
+# ── Serialisation (Parquet support for artifact export) ───────────────────────
+pyarrow>=12.0.0
+
+# ── Optional but strongly recommended for large-graph performance ─────────────
+# scipy is already listed above; it enables fast sparse-matrix routines
+# used internally by networkx for betweenness centrality on large graphs.
