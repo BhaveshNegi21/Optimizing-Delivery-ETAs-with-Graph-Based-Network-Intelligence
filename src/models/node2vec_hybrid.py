@@ -159,6 +159,8 @@ DST_EMB_PREFIX = "dst_emb_"
 # ==============================================================================
 
 def load_data(data_dir: Path) -> Tuple[pd.DataFrame, nx.MultiDiGraph]:
+    from pathlib import Path
+    data_dir = Path(data_dir)
     """
     Load the cleaned trip DataFrame and the pre-built logistics graph.
 
@@ -882,7 +884,7 @@ def parse_args() -> argparse.Namespace:
         description="Phase 3 · Step 2 — Node2Vec Hybrid ETA Pipeline",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument("--data_dir",    type=Path, default=Path("../data"))
+    parser.add_argument("--data_dir", type=str, default="data")
     parser.add_argument("--output_dir",  type=Path, default=Path("../data"))
     parser.add_argument("--embed_dim",   type=int,   default=64,
                         help="Dimensionality of Node2Vec embedding vectors")
