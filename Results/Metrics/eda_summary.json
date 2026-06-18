@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-16T22:36:31.660817",
+  "raw_rows": 144867,
+  "clean_rows": 141865,
+  "drop_pct": 2.072,
+  "n_unique_hubs": 1655,
+  "n_unique_edges": 2790,
+  "osrm_baseline_mae_min": 203.656005859375,
+  "global_cutoff_rate_pct": 83.48,
+  "median_delay_factor": 1.8525999784469604,
+  "mean_delay_factor": 2.033900022506714,
+  "pct_within_15pct_osrm": 3.42,
+  "route_type_counts": {
+    "FTL": 98631,
+    "Carting": 43234
+  }
+}

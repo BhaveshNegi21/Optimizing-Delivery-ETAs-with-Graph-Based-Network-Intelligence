@@ -1,0 +1,12 @@
+{
+  "model": "XGBoost_Baseline",
+  "generated_at": "2026-06-16T23:27:02.001037",
+  "n_test_rows": 28373,
+  "mae_min": 35.6848,
+  "rmse_min": 74.1662,
+  "mape_pct": 18.584999084472656,
+  "sla_within_15pct": 60.2686,
+  "osrm_baseline_mae": 209.0149,
+  "osrm_baseline_rmse": 376.3557,
+  "osrm_baseline_sla": 4.388
+}
